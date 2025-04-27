@@ -23,7 +23,7 @@ public class LoggingAccessDeniedHandler implements AccessDeniedHandler {
 
         // "log" the attempt
         if (auth != null) {
-            String format = "%s was trying to access %s\n";
+            String format = "%s was trying to access page %s\n";
             System.out.printf(format, auth.getName(), request.getRequestURI());
         }
 
